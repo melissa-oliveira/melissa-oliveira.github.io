@@ -1,1 +1,141 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Gestão do Desenvolvimento de Websites</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#page-top">Gestão de Websites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#github">Conceitos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#github-clone">Clone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#github-commit">Commit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#github-branches">Branches e Merge</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary bg-gradient text-white">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">Gestão do Desenvolvimento de Websites</h1>
+            <p class="lead">Aprenda a usar GitHub e os principais comandos do terminal</p>
+            <a class="btn btn-lg btn-light" href="#github">Saiba mais</a>
+        </div>
+    </header>
+
+    <section id="github" class="bg-dark text-light">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Principais atividades no GitHub</h2>
+                    <p class="lead">Veja os conceitos essenciais para gerenciar repositórios e colaborar em projetos.
+                    </p>
+                    <ul>
+                        <li><strong>Repositório</strong> – Diretório onde o Git armazena o histórico do projeto.</li>
+                        <li><strong>Commit</strong> – Registra mudanças no repositório com uma mensagem descritiva.</li>
+                        <li><strong>Branch</strong> – Linha de desenvolvimento paralela dentro do repositório.</li>
+                        <li><strong>Merge</strong> – Une alterações de diferentes branches.</li>
+                        <li><strong>Clone</strong> – Copia um repositório remoto para um ambiente local.</li>
+                        <li><strong>Pull</strong> – Atualiza o repositório local com mudanças do repositório remoto.
+                        </li>
+                        <li><strong>Push</strong> – Envia alterações do repositório local para o remoto.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github-clone" class="bg-light">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Como clonar um repositório</h2>
+                    <p class="lead">Siga os passos abaixo para copiar um repositório remoto para seu ambiente local:</p>
+                    <ol>
+                        <li>Copie a URL do repositório no GitHub.</li>
+                        <li>Abra o terminal e navegue até o diretório onde deseja salvar o repositório.</li>
+                        <li>Execute o comando <code>git clone URL_DO_REPOSITORIO</code>.</li>
+                        <li>Aguarde o download dos arquivos e entre no diretório clonado com
+                            <code>cd nome-do-repositorio</code>.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github-commit" class="bg-dark text-light">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Como fazer um commit</h2>
+                    <p class="lead">Siga os passos abaixo para registrar suas mudanças no repositório:</p>
+                    <ol>
+                        <li>Abra o terminal e navegue até o diretório do seu repositório.</li>
+                        <li>Use o comando <code>git status</code> para verificar quais arquivos foram modificados.</li>
+                        <li>Adicione os arquivos que deseja commitar com <code>git add nome_do_arquivo</code> ou
+                            <code>git add .</code> para adicionar todos.
+                        </li>
+                        <li>Realize o commit com o comando
+                            <code>git commit -m "Mensagem descritiva das mudanças"</code>.
+                        </li>
+                        <li>Se necessário, envie as alterações para o repositório remoto com
+                            <code>git push origin nome-da-branch</code>.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github-branches" class="bg-light">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Como utilizar branches e fazer merge</h2>
+                    <p class="lead">Siga os passos abaixo para criar branches e unir mudanças:</p>
+                    <ol>
+                        <li>Crie uma nova branch com <code>git branch nome-da-branch</code>.</li>
+                        <li>Alterne para a nova branch com <code>git checkout nome-da-branch</code> ou
+                            <code>git switch nome-da-branch</code>.
+                        </li>
+                        <li>Faça suas alterações e commits normalmente.</li>
+                        <li>Para unir a branch ao código principal, alterne para a branch principal com
+                            <code>git checkout main</code> ou <code>git switch main</code>.
+                        </li>
+                        <li>Realize o merge com <code>git merge nome-da-branch</code>.</li>
+                        <li>Se houver conflitos, resolva-os manualmente e finalize o merge.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white">Copyright &copy; Prof. Melissa de Oliveira, 2025</p>
+            <p class="m-0 text-center text-white">Instituto Federal do Paraná - Campus Telêmaco Borba</p>
+            <p class="m-0 text-center text-white">Técnico em Informática para Internet</p>
+            <p class="m-0 text-center text-white">Gestão de Websites</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
